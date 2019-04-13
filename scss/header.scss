@@ -1,0 +1,118 @@
+$header-height:110px;
+.kenarlik{
+  border: 1px solid black;
+}
+.Header{
+  position: relative;
+  height: $header-height;
+  background-color: white;
+
+  .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  &-info{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left: 10px;
+    top:5px;
+    font-size:$font-size-small;
+    img{
+      height: 20px;
+      width: 20px;
+      border-radius:$border-radius;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  &-text{
+    margin-left: 5px;
+    color: #c3c3c3;
+    }
+  }
+  &-pages{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    right: 10px;
+    top: 5px;
+    a{
+      color:#c3c3c3;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  &-search{
+    position:absolute;
+    left: 10px;
+    top: 50px;
+      &-text{
+        position: absolute;
+        height: 40px;
+        width: 230px;
+    }
+      &-button{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: $color-yellow;
+        left: 230px;
+    }
+    input{
+      &::placeholder{
+        font-size:$font-size-small;
+      }
+    }
+  }
+  &-signboard{
+    position: absolute;
+    top: 50px;
+    height: 40px;
+    width: 370px;
+    left: 300px;
+    margin-left: 135px;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &-shopping{
+    position: absolute;
+    display: flex;
+    right: 10px;
+    top: 50px;
+    height: 40px;
+    width: 240px;
+    border: 1px solid $color-gray;
+
+    &-scar{
+      height: 100%;
+      width: 25%;
+      background: white;
+      img{
+        height: 50%;
+        width: 50%;
+      }
+    }
+    &-status{
+      height: 100%;
+      width: 75%;
+      background-color: $color-yellow;
+    }
+  }
+
+
+}
+.icon-search{
+  left: 235px;
+  top:5px;
+}
+.icon-cart{
+  fill: $color-yellow;
+  left: 15px;
+  top: 4px;
+}
