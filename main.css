@@ -454,7 +454,8 @@ body {
   height: 30px;
   width: 30px;
   position: relative;
-  pointer-events: none; }
+  pointer-events: none;
+  fill: #ffd15c; }
 
 .kenarlik {
   border: 1px solid black; }
@@ -512,6 +513,9 @@ body {
       color: #c3c3c3;
       padding-left: 5px;
       padding-right: 5px; }
+    .Header-pages a:hover {
+      text-decoration: underline;
+      color: gray; }
   .Header-search {
     position: absolute;
     left: 10px;
@@ -526,19 +530,23 @@ body {
       width: 40px;
       background-color: #ffd15c;
       left: 230px; }
-    .Header-search input::-webkit-input-placeholder {
-      font-size: 0.9em; }
-    .Header-search input::-ms-input-placeholder {
-      font-size: 0.9em; }
-    .Header-search input::placeholder {
-      font-size: 0.9em; }
+    .Header-search input {
+      padding: 10px; }
+      .Header-search input::-webkit-input-placeholder {
+        font-size: 0.9em; }
+      .Header-search input::-ms-input-placeholder {
+        font-size: 0.9em; }
+      .Header-search input::placeholder {
+        font-size: 0.9em; }
   .Header-signboard {
-    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     top: 50px;
     height: 40px;
     width: 370px;
-    left: 300px;
-    margin-left: 135px; }
+    margin: auto;
+    margin-top: 50px; }
     .Header-signboard img {
       height: 100%;
       width: 100%; }
@@ -560,15 +568,30 @@ body {
         height: 50%;
         width: 50%; }
     .Header-shopping-status {
+      padding-left: 50px;
+      padding-top: 6px;
       height: 100%;
       width: 75%;
       background-color: #ffd15c; }
+      .Header-shopping-status p {
+        font-size: 0.9em;
+        color: white; }
 
 .icon-search {
+  fill: black;
   left: 235px;
   top: 5px; }
 
 .icon-cart {
-  fill: #ffd15c;
   left: 15px;
   top: 4px; }
+
+.icon-lock {
+  height: 20px;
+  width: 20px; }
+
+.icon-envelop {
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  margin-right: 5px; }

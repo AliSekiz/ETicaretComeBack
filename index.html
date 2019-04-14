@@ -18,15 +18,23 @@
           <path d="M12 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
           <path d="M32 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
           <path d="M32 16v-12h-24c0-1.105-0.895-2-2-2h-6v2h4l1.502 12.877c-0.915 0.733-1.502 1.859-1.502 3.123 0 2.209 1.791 4 4 4h24v-2h-24c-1.105 0-2-0.895-2-2 0-0.007 0-0.014 0-0.020l26-3.98z"></path>
-        </symbol>
+      </symbol>
+      <symbol id="icon-lock" viewBox="0 0 32 32">
+          <title>lock</title>
+          <path d="M18.5 14h-0.5v-6c0-3.308-2.692-6-6-6h-4c-3.308 0-6 2.692-6 6v6h-0.5c-0.825 0-1.5 0.675-1.5 1.5v15c0 0.825 0.675 1.5 1.5 1.5h17c0.825 0 1.5-0.675 1.5-1.5v-15c0-0.825-0.675-1.5-1.5-1.5zM6 8c0-1.103 0.897-2 2-2h4c1.103 0 2 0.897 2 2v6h-8v-6z"></path>
+      </symbol>
+      <symbol id="icon-envelop" viewBox="0 0 32 32">
+          <title>envelop</title>
+          <path d="M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z"></path>
+      </symbol>
     </defs>
   </svg>
     <header class="Header">
       <div class="container">
         <div class="Header-info">
-            <img src="resimler/kilit.png">
+            <svg class="icon icon-lock"><use xlink:href="#icon-lock"></use></svg>
             <p>%100 Güvenli Alışveriş</p>
-            <img src="resimler/mail.png">
+            <svg class="icon icon-envelop"><use xlink:href="#icon-envelop"></use></svg>
             <p>info@abcparke.com</p>
         </div>
         <div class="Header-pages">
@@ -40,7 +48,7 @@
             <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
           </input>
         </div>
-        <div class="Header-signboard">
+        <div class="Header-signboard kenarlik">
 
         </div>
         <div class="Header-shopping">
@@ -48,7 +56,7 @@
             <svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg>
           </div>
           <div class="Header-shopping-status">
-
+            <p>Sipariş yok</p>
           </div>
         </div>
       </div>
